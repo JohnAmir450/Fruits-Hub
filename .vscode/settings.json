@@ -1,3 +1,5 @@
 {
-    "easycode.usePromptAssistant": true
+    "easycode.usePromptAssistant": true,
+    "pieces.cloudCapabilities": "Blended",
+    "pieces.telemetry": true
 }
