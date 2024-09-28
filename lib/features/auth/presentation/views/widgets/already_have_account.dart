@@ -23,7 +23,7 @@ class AlreadyHaveAnAccountWidget extends StatelessWidget {
             recognizer: TapGestureRecognizer()..onTap=(){
               context.pop();
             },
-            text: ' تسجيل الدخول',
+            text: ' تسجيل الدخول', 
             style: TextStyles.semiBold16
                 .copyWith(color: AppColors.primaryColor),
           ),

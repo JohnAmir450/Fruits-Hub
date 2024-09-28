@@ -1,5 +1,6 @@
 {
     "easycode.usePromptAssistant": true,
     "pieces.cloudCapabilities": "Blended",
-    "pieces.telemetry": true
+    "pieces.telemetry": true,
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
