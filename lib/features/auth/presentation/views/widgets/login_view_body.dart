@@ -2,9 +2,9 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:fruit_hub/core/helper_functions/utils/app_colors.dart';
-import 'package:fruit_hub/core/helper_functions/utils/app_text_styles.dart';
-import 'package:fruit_hub/core/helper_functions/utils/constants.dart';
+import 'package:fruit_hub/core/utils/app_colors.dart';
+import 'package:fruit_hub/core/utils/app_text_styles.dart';
+import 'package:fruit_hub/core/utils/constants.dart';
 import 'package:fruit_hub/core/widgets/custom_button.dart';
 import 'package:fruit_hub/core/widgets/custom_text_field.dart';
 import 'package:fruit_hub/features/auth/data/login_cubit/log_in_cubit.dart';
@@ -12,7 +12,7 @@ import 'package:fruit_hub/features/auth/presentation/views/widgets/dont_have_an_
 import 'package:fruit_hub/features/auth/presentation/views/widgets/or_divider.dart';
 import 'package:fruit_hub/features/auth/presentation/views/widgets/social_login_button.dart';
 
-import '../../../../../core/helper_functions/utils/spacing.dart';
+import '../../../../../core/utils/spacing.dart';
 
 class LoginViewBody extends StatelessWidget {
   const LoginViewBody({super.key});

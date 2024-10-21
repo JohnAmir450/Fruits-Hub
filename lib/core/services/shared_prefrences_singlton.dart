@@ -9,7 +9,13 @@ class Prefs {
   static setBool(String key, bool value) {
     _instance.setBool(key, value);
 }
+static setString(String key, String value) {
+    _instance.setString(key, value);
+}
 static getBool(String key) {
    return _instance.getBool(key) ?? false;
+}
+static getString(String key) {
+   return _instance.getString(key) ?? false;
 }
 }

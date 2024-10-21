@@ -4,8 +4,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:fruit_hub/core/helper_functions/extentions.dart';
 import 'package:fruit_hub/core/helper_functions/routes.dart';
-import 'package:fruit_hub/core/helper_functions/utils/app_text_styles.dart';
-import 'package:fruit_hub/core/helper_functions/utils/constants.dart';
+import 'package:fruit_hub/core/utils/app_text_styles.dart';
+import 'package:fruit_hub/core/utils/constants.dart';
 import 'package:fruit_hub/core/services/shared_prefrences_singlton.dart';
 
 class PageViewItem extends StatelessWidget {

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:fruit_hub/core/helper_functions/utils/app_colors.dart';
-import 'package:fruit_hub/core/helper_functions/utils/app_text_styles.dart';
-import 'package:fruit_hub/core/helper_functions/utils/spacing.dart';
+import 'package:fruit_hub/core/utils/app_colors.dart';
+import 'package:fruit_hub/core/utils/app_text_styles.dart';
+import 'package:fruit_hub/core/utils/spacing.dart';
 import 'package:fruit_hub/features/auth/data/sign_up_cubit/signup_cubit.dart';
 import 'package:fruit_hub/features/auth/presentation/views/widgets/custom_checkbox.dart';
 

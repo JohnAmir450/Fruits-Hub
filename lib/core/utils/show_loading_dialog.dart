@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fruit_hub/core/helper_functions/utils/app_colors.dart';
+import 'package:fruit_hub/core/utils/app_colors.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 
 Future<dynamic> showLoadingDialog(BuildContext context) {

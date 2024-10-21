@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:fruit_hub/core/helper_functions/utils/app_colors.dart';
-import 'package:fruit_hub/core/helper_functions/utils/app_text_styles.dart';
+import 'package:fruit_hub/core/utils/app_colors.dart';
+import 'package:fruit_hub/core/utils/app_text_styles.dart';
 import 'package:fruit_hub/features/onboarding/presentation/views/widgets/page_view_item.dart';
 
 class OnBoardingPageView extends StatelessWidget {

@@ -2,8 +2,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:fruit_hub/core/helper_functions/extentions.dart';
 import 'package:fruit_hub/core/helper_functions/routes.dart';
-import 'package:fruit_hub/core/helper_functions/utils/app_colors.dart';
-import 'package:fruit_hub/core/helper_functions/utils/app_text_styles.dart';
+import 'package:fruit_hub/core/utils/app_colors.dart';
+import 'package:fruit_hub/core/utils/app_text_styles.dart';
 
 class DontHaveAnAccountWidget extends StatelessWidget {
   const DontHaveAnAccountWidget({

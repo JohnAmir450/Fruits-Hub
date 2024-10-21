@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fruit_hub/core/helper_functions/utils/app_colors.dart';
+import 'package:fruit_hub/core/utils/app_colors.dart';
 
 class CustomCheckBox extends StatelessWidget {
   const CustomCheckBox({super.key, required this.isChecked});

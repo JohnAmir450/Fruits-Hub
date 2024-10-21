@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:fruit_hub/core/helper_functions/utils/constants.dart';
-import 'package:fruit_hub/core/helper_functions/utils/custom_snak_bar.dart';
-import 'package:fruit_hub/core/helper_functions/utils/spacing.dart';
+import 'package:fruit_hub/core/utils/constants.dart';
+import 'package:fruit_hub/core/utils/custom_snak_bar.dart';
+import 'package:fruit_hub/core/utils/spacing.dart';
 import 'package:fruit_hub/core/widgets/custom_button.dart';
 import 'package:fruit_hub/core/widgets/custom_text_field.dart';
 import 'package:fruit_hub/features/auth/data/sign_up_cubit/signup_cubit.dart';

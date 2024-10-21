@@ -6,9 +6,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:fruit_hub/core/helper_functions/on_generate_routes.dart';
 import 'package:fruit_hub/core/helper_functions/routes.dart';
-import 'package:fruit_hub/core/helper_functions/utils/app_colors.dart';
-import 'package:fruit_hub/core/helper_functions/utils/bloc_observer.dart';
-import 'package:fruit_hub/core/helper_functions/utils/constants.dart';
+import 'package:fruit_hub/core/services/firebase_auth_service.dart';
+import 'package:fruit_hub/core/utils/app_colors.dart';
+import 'package:fruit_hub/core/utils/bloc_observer.dart';
+import 'package:fruit_hub/core/utils/constants.dart';
 import 'package:fruit_hub/core/services/get_it_service.dart';
 import 'package:fruit_hub/core/services/shared_prefrences_singlton.dart';
 import 'package:fruit_hub/firebase_options.dart';
@@ -30,7 +31,17 @@ class FruitsHub extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    bool isOnboardingViewed=Prefs.getBool(kIsOnboardingViewed);
+    
+    String getRoute(){
+      bool isOnboardingViewed=Prefs.getBool(kIsOnboardingViewed);
+    var isLoggedIn = FirebaseAuthService().isLoggedIn();
+    if(isLoggedIn && isOnboardingViewed){
+      return Routes.mainView;
+    }else if(!isLoggedIn && isOnboardingViewed){
+      return Routes.loginView;
+    }else{
+      return Routes.onBoardingView;
+    }}
     return MaterialApp(
       theme: ThemeData(
         fontFamily:'Cairo',
@@ -50,7 +61,8 @@ class FruitsHub extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Fruits Hub',
       onGenerateRoute: onGenerateRoute,
-      initialRoute:isOnboardingViewed? Routes.loginView:Routes.onBoardingView,
+      initialRoute:getRoute(),
     );
+    
   }
 }
